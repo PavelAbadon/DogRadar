@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="bg">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Calendar — MyDogCalendar</title><link rel="stylesheet" href="styles/styles.css"></head>
+<body>
+  <header class="header"><div class="container space-between"><div class="brand"><img src="assets/logo.png" alt="logo"><div>MyDogCalendar</div></div><nav class="nav"><a href="index.html">Home</a><a href="gallery.html">Dogs Gallery</a></nav></div></header>
+
+  <main class="container">
+    <h2 style="margin-top:16px">Календар</h2>
+    <div class="pixel-card" style="padding:12px; margin-top:8px;">
+      <div style="display:flex;gap:12px;align-items:center;">
+        <div>
+          <label for="date">Дата</label>
+          <input id="date" type="date" value="">
+        </div>
+        <div>
+          <label for="select-dog">Куче</label>
+          <select id="select-dog">
+            <option>Рой</option><option>Лулу</option>
+          </select>
+        </div>
+        <div>
+          <label for="select-loc">Локация</label>
+          <select id="select-loc">
+            <option>Южен парк</option><option>Борисова градина</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="calendar-grid" style="margin-top:12px;">
+        <div>
+          <!-- times column -->
+          <div class="time-cell">07:00</div>
+          <div class="time-cell">07:30</div>
+          <div class="time-cell">08:00</div>
+          <div class="time-cell">08:30</div>
+          <div class="time-cell">09:00</div>
+          <!-- ... continue -->
+        </div>
+        <div>
+          <!-- slots area -->
+          <div class="slot-row"><div class="small">—</div></div>
+          <div class="slot-row"><div class="small">—</div></div>
+          <div class="slot-row"><div class="small">Рой (07:30–08:30)</div></div>
+          <div class="slot-row"><div class="small">—</div></div>
+          <div class="slot-row"><div class="small">—</div></div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">Курсов проект — Павел Василев, 2025 ноември</footer>
+</body>
+</html>

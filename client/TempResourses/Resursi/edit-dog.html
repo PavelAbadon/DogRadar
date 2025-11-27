@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="bg">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Edit Dog — MyDogCalendar</title><link rel="stylesheet" href="styles/styles.css"></head>
+<body>
+  <header class="header"><div class="container space-between"><div class="brand"><img src="assets/logo.png" alt="logo"><div>MyDogCalendar</div></div><nav class="nav"><a href="index.html">Home</a><a href="gallery.html">Dogs Gallery</a></nav></div></header>
+
+  <main class="container">
+    <h2 style="margin-top:16px">Редактирай куче</h2>
+    <div class="form" style="max-width:600px; margin-top:12px;">
+      <form action="#" method="post">
+        <label for="dog-name">Име</label>
+        <input id="dog-name" name="name" type="text" value="Рой" required>
+        <label for="dog-breed">Порода</label>
+        <input id="dog-breed" name="breed" type="text" value="Labrador" required>
+        <label for="dog-size">Размер</label>
+        <select id="dog-size" name="size" required>
+          <option value="small">Small (30 мин)</option>
+          <option value="medium" selected>Medium (60 мин)</option>
+          <option value="large">Large (90 min)</option>
+        </select>
+        <label for="dog-notes">Бележки</label>
+        <textarea id="dog-notes" name="notes" rows="3">Обича плуване</textarea>
+        <div class="actions">
+          <button class="pixel-btn" type="submit">Запази</button>
+          <a class="pixel-btn" href="details.html" style="background:#f6f6f2">Отказ</a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">Курсов проект — Павел Василев, 2025 ноември</footer>
+</body>
+</html>
