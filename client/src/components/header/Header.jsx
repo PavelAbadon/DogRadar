@@ -5,13 +5,15 @@ export default function Header() {
         <>
             <header className="header">
                 <div className="container space-between">
-                    <div className="brand">
+                    <Link to='/'>
+                        <div className="brand">
                         <img src="../public/assets/dogRadarLogo01.png" alt="logo" />
                         <div>Dog Radar</div>
                     </div>
+                    </Link>
                     <nav className="nav">
-                        <Link to="/index">Home</Link>
-                        <Link to="/gallery">Dogs Gallery</Link>
+                        <Link to="/">Home</Link>
+                        <Link to="/dogs">Dogs Gallery</Link>
                         <Link to="calendar.html">Calendar</Link>
                         <Link to="login.html">Login</Link>
                         <Link to="register.html">Register</Link>
