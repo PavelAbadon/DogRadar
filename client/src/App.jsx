@@ -8,6 +8,7 @@ import Calendar from './components/calendar/Calendar'
 import Login from './components/login/Login';
 import Register from './components/register/Register';
 import Logout from './components/logout/Logout';
+import Day from './components/calendar/day/Day';
 
 function App() {
     
@@ -19,6 +20,7 @@ function App() {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/dogs' element={<Gallery/>}/>
                 <Route path='/calendar' element={<Calendar/>}/>
+                <Route path='/day' element={<Day/>}/>
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/register' element={<Register/>}/>
                 <Route path='/logout' element={<Logout/>}/>

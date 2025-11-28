@@ -1,60 +1,126 @@
-// Calendar.jsx
 export default function Calendar() {
-  const monthNames = ["Януари","Февруари","Март","Април","Май","Юни","Юли","Август","Септември","Октомври","Ноември","Декември"];
-  const weekDays = ["Пн","Вт","Ср","Чт","Пт","Сб","Нд"];
-
-  const currentYear = 2025;
-  const currentMonth = 10; // Ноември (0-indexed)
-  const firstDay = new Date(currentYear, currentMonth, 1).getDay(); // 0=Неделя
-  const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
-
-  const startOffset = firstDay === 0 ? 6 : firstDay - 1;
-
-  const calendarDays = Array.from({ length: startOffset + daysInMonth }, (_, i) => {
-    if(i < startOffset) return null;
-    return i - startOffset + 1;
-  });
-
-  // Примерни "икони" за предходен и следващ месец (можеш да замениш с изображения)
-  const prevMonth = monthNames[(currentMonth + 11) % 12];
-  const nextMonth = monthNames[(currentMonth + 1) % 12];
-
-  return (
-    <main className="container">
-      <div className="calendar-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 16 }}>
-        <button className="pixel-btn" style={{ fontWeight: "bold" }}>⏪ {prevMonth}</button>
-        <h2 style={{ fontSize: 32 }}>{monthNames[currentMonth]} {currentYear}</h2>
-        <button className="pixel-btn" style={{ fontWeight: "bold" }}>{nextMonth} ⏩</button>
+    return (
+   <>
+  {/* Calendar - static visual (No logic) */}
+  <main className="container">
+    <div className="calendar-top">
+      <button className="month-btn month-prev">⏪ Октомври</button>
+      <h2 className="month-title">Ноември 2025</h2>
+      <button className="month-btn month-next">Декември ⏩</button>
+    </div>
+    {/* Weekday headers */}
+    <div className="calendar-weekdays" aria-hidden="true">
+      <div>Пн</div>
+      <div>Вт</div>
+      <div>Ср</div>
+      <div>Чт</div>
+      <div>Пт</div>
+      <div>Сб</div>
+      <div>Нд</div>
+    </div>
+    {/* Grid: empty cells for offset + actual days */}
+    <div className="calendar-grid visual-month">
+      {/* пустите клетки (при нужда) */}
+      <div className="calendar-cell empty" />
+      <div className="calendar-cell empty" />
+      <div className="calendar-cell empty" />
+      {/* реалните дни на месеца (примерно за Ноември 2025) */}
+      <div className="calendar-cell">
+        <div className="day-num">1</div>
       </div>
-
-      {/* Дни на седмицата */}
-      <div className="calendar-weekdays" style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", marginTop: 12 }}>
-        {weekDays.map(day => (
-          <div key={day} style={{ fontWeight:"bold", textAlign:"center", fontSize: 18 }}>{day}</div>
-        ))}
+      <div className="calendar-cell">
+        <div className="day-num">2</div>
       </div>
-
-      {/* Дни от месеца */}
-      <div className="calendar-grid" style={{ display: "grid", gridTemplateColumns: "repeat(7, 1fr)", gap: 8, marginTop: 8 }}>
-        {calendarDays.map((day, idx) => (
-          <div
-            key={idx}
-            className="calendar-day pixel-card"
-            style={{
-              padding: 12,
-              border: "3px solid red",
-              fontSize: 24,
-              fontWeight: "bold",
-              textAlign: "center",
-              color: day ? "red" : "#999",
-              minHeight: 120,
-              background: day === null ? "#f0f0f0" : "#fff"
-            }}
-          >
-            {day || ""}
-          </div>
-        ))}
+      <div className="calendar-cell">
+        <div className="day-num">3</div>
       </div>
-    </main>
+      <div className="calendar-cell">
+        <div className="day-num">4</div>
+      </div>
+      {/* продължаваш да напълваш до 30 */}
+      {/* примерни редове: */}
+      <div className="calendar-cell">
+        <div className="day-num">5</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">6</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">7</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">8</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">9</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">10</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">11</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">12</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">13</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">14</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">15</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">16</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">17</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">18</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">19</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">20</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">21</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">22</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">23</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">24</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">25</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">26</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">27</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">28</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">29</div>
+      </div>
+      <div className="calendar-cell">
+        <div className="day-num">30</div>
+      </div>
+      {/* ако месецът има 31 — допълваш */}
+    </div>
+  </main>
+</>
+
   );
 }
