@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function Header() {
     return (
         <>
@@ -8,12 +10,12 @@ export default function Header() {
                         <div>Dog Radar</div>
                     </div>
                     <nav className="nav">
-                        <a href="index.html">Home</a>
-                        <a href="gallery.html">Dogs Gallery</a>
-                        <a href="calendar.html">Calendar</a>
-                        <a href="login.html">Login</a>
-                        <a href="register.html">Register</a>
-                        <a href="logout.html">Logout</a>
+                        <Link to="/index">Home</Link>
+                        <Link to="/gallery">Dogs Gallery</Link>
+                        <Link to="calendar.html">Calendar</Link>
+                        <Link to="login.html">Login</Link>
+                        <Link to="register.html">Register</Link>
+                        <Link to="logout.html">Logout</Link>
                     </nav>
                 </div>
             </header>
