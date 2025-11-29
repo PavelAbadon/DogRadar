@@ -1,0 +1,90 @@
+{
+  "d1a9c1e2-4b8f-47f4-9b15-3c71fe1ed9af": {
+    "_id": "d1a9c1e2-4b8f-47f4-9b15-3c71fe1ed9af",
+    "name": "Roy",
+    "breed": "Labrador Retriever",
+    "age": 6,
+    "gender": "male",
+    "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200&q=80",
+    "ownerId": "user-1111-aaaa-0001",
+    "enemies": ["9b13eaf0-c47d-4a2f-a8c1-e59b1c9ea673"],
+    "_createdOn": 1712345678000
+  },
+  "a7c3f9d2-1e54-4f2b-91b0-9bcd213af45a": {
+    "_id": "a7c3f9d2-1e54-4f2b-91b0-9bcd213af45a",
+    "name": "Bella",
+    "breed": "German Shepherd",
+    "age": 4,
+    "gender": "female",
+    "imageUrl": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1200&q=80",
+    "ownerId": "user-2222-bbbb-0002",
+    "enemies": ["7e45bc1f-1c92-4b27-92fe-93350e6230d5"],
+    "_createdOn": 1712345732000
+  },
+  "f4e9b3a7-82c9-4a03-a3e2-cc91b432cc01": {
+    "_id": "f4e9b3a7-82c9-4a03-a3e2-cc91b432cc01",
+    "name": "Max",
+    "breed": "Golden Retriever",
+    "age": 5,
+    "gender": "male",
+    "imageUrl": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&q=80",
+    "ownerId": "user-1111-aaaa-0001",
+    "enemies": [],
+    "_createdOn": 1712345839000
+  },
+  "9b13eaf0-c47d-4a2f-a8c1-e59b1c9ea673": {
+    "_id": "9b13eaf0-c47d-4a2f-a8c1-e59b1c9ea673",
+    "name": "Lucky",
+    "breed": "Beagle",
+    "age": 3,
+    "gender": "male",
+    "imageUrl": "https://images.unsplash.com/photo-1517350696047-9c9a6f6b8c2d?w=1200&q=80",
+    "ownerId": "user-3333-cccc-0003",
+    "enemies": ["d1a9c1e2-4b8f-47f4-9b15-3c71fe1ed9af", "7e45bc1f-1c92-4b27-92fe-93350e6230d5"],
+    "_createdOn": 1712345935000
+  },
+  "7e45bc1f-1c92-4b27-92fe-93350e6230d5": {
+    "_id": "7e45bc1f-1c92-4b27-92fe-93350e6230d5",
+    "name": "Shadow",
+    "breed": "Border Collie",
+    "age": 2,
+    "gender": "female",
+    "imageUrl": "https://images.unsplash.com/photo-1558944351-b5c6ca9f8f6c?w=1200&q=80",
+    "ownerId": "user-2222-bbbb-0002",
+    "enemies": ["a7c3f9d2-1e54-4f2b-91b0-9bcd213af45a"],
+    "_createdOn": 1712346021000
+  },
+  "b2f6c8d1-e7a3-4f5b-9c1d-0a1b2c3d4e5f": {
+    "_id": "b2f6c8d1-e7a3-4f5b-9c1d-0a1b2c3d4e5f",
+    "name": "Maya",
+    "breed": "French Bulldog",
+    "age": 4,
+    "gender": "female",
+    "imageUrl": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b8?w=1200&q=80",
+    "ownerId": "user-1111-aaaa-0001",
+    "enemies": [],
+    "_createdOn": 1712346117000
+  },
+  "c3d4e5f6-7a8b-4c9d-8e1f-2b3c4d5e6f7a": {
+    "_id": "c3d4e5f6-7a8b-4c9d-8e1f-2b3c4d5e6f7a",
+    "name": "Nala",
+    "breed": "Bulldog",
+    "age": 7,
+    "gender": "female",
+    "imageUrl": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&q=80",
+    "ownerId": "user-3333-cccc-0003",
+    "enemies": ["f4e9b3a7-82c9-4a03-a3e2-cc91b432cc01"],
+    "_createdOn": 1712346203000
+  },
+  "e4f5a6b7-8c9d-4e0f-9a1b-2c3d4e5f6a7b": {
+    "_id": "e4f5a6b7-8c9d-4e0f-9a1b-2c3d4e5f6a7b",
+    "name": "Rocky",
+    "breed": "Dachshund",
+    "age": 5,
+    "gender": "male",
+    "imageUrl": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=1200&q=80",
+    "ownerId": "user-2222-bbbb-0002",
+    "enemies": ["b2f6c8d1-e7a3-4f5b-9c1d-0a1b2c3d4e5f"],
+    "_createdOn": 1712346299000
+  }
+}
