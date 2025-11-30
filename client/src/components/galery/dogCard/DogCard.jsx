@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function DogCard({
     _id,
     name,
@@ -17,9 +19,9 @@ export default function DogCard({
             <div className="meta">пол: {gender} </div>
             <div className="small">Собственик: Мария</div>
             <div style={{ marginTop: 8 }}>
-                <a className="pixel-btn" href="details.html">
+                <Link className="pixel-btn" to={`/dogs/${_id}/details`} >
                     Детайли
-                </a>
+                </Link>
             </div>
         </div>
     )

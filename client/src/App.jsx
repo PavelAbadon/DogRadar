@@ -8,6 +8,7 @@ import Calendar from './components/calendar/Calendar'
 import Login from './components/login/Login';
 import Register from './components/register/Register';
 import Logout from './components/logout/Logout';
+import Details from './components/details/details';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
                 <Route path='/login' element={<Login/>}/>
                 <Route path='/register' element={<Register/>}/>
                 <Route path='/logout' element={<Logout/>}/>
+                <Route path='/dogs/:dogId/details' element={<Details/>}/>
             </Routes>
             
             <Footer/>
