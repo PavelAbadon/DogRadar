@@ -322,4 +322,54 @@ body {
     height: 100%;
     object-fit: cover;
 }
+/* Details / Dog image styles (global) */
+.details-card { padding: 16px; }
+
+.details-image-wrap {
+  width: 100%;
+  height: 340px;            /* фиксирана височина за добър визуален резултат */
+  max-height: 56vh;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #f8faf8, #fff);
+  border: 4px solid rgba(0,0,0,0.06);
+}
+
+/* Самата снимка */
+.details-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  image-rendering: auto; /* ако имаш пиксел арт, може да смениш на pixelated */
+  border-radius: 6px;
+  transition: transform 200ms ease;
+}
+
+/* Малък hover ефект (визуален) */
+.details-image-wrap:hover .details-image {
+  transform: scale(1.02);
+}
+
+/* Заглавие (има вече .small и други правила) */
+.dog-name {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .details-image-wrap { height: 240px; }
+  .dog-name { font-size: 18px; }
+}
+
+@media (max-width: 520px) {
+  .details-image-wrap { height: 180px; }
+  .details-card { padding: 12px; }
+}
 
