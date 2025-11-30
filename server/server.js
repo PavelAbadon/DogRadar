@@ -1353,7 +1353,7 @@
       "breed": "Labrador Retriever",
       "age": 6,
       "gender": "male",
-      "imageUrl": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200&q=80",
+      "imageUrl": "https://www.pexels.com/photo/adult-chocolate-labrador-retriever-lying-on-brown-and-white-striped-textile-544269/",
       "ownerId": "user-1111-aaaa-0001",
       "enemies": ["9b13eaf0-c47d-4a2f-a8c1-e59b1c9ea673"],
       "_createdOn": 1712345678000

@@ -305,4 +305,21 @@ body {
   .time-col { width: 80px; font-size: 13px; }
   .pixel-btn { width: 100px; padding: 6px; }
 }
+.dog-image-wrapper {
+    width: 100%;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 

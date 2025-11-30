@@ -8,7 +8,9 @@ export default function DogCard({
 }) {
     return (
         <div className="card pixel-card">
-            <div className="avatar">🐾</div>
+            <div className="dog-image-wrapper">
+                <img className="dog-image" src={imageUrl} alt={name} />
+            </div>
             <div className="title">{name}</div>
             <div className="meta">порода: {breed}</div>
             <div className="meta">години: {age} </div>

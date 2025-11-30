@@ -3,7 +3,7 @@ export default function Home() {
         <main className="container">
             <section className="hero">
                 <div className="text">
-                    <h2>Добре дошъл в MyDogCalendar</h2>
+                    <h2>Добре дошъл в Dog Radar</h2>
                     <p>
                         Планирай разходките на твоето куче, покани приятели и получавай
                         предупреждения, когато "врагове" са планирани на същото място.
