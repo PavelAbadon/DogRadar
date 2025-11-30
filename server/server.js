@@ -1353,7 +1353,7 @@
       "breed": "Labrador Retriever",
       "age": 6,
       "gender": "male",
-      "imageUrl": "https://www.pexels.com/photo/adult-chocolate-labrador-retriever-lying-on-brown-and-white-striped-textile-544269/",
+      "imageUrl": "https://images.pexels.com/photos/544269/pexels-photo-544269.jpeg?_gl=1*kjqsmr*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTMyODIkajQ2JGwwJGgw",
       "ownerId": "user-1111-aaaa-0001",
       "enemies": ["9b13eaf0-c47d-4a2f-a8c1-e59b1c9ea673"],
       "_createdOn": 1712345678000
@@ -1364,7 +1364,7 @@
       "breed": "German Shepherd",
       "age": 4,
       "gender": "female",
-      "imageUrl": "https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1200&q=80",
+      "imageUrl": "https://images.pexels.com/photos/236622/pexels-photo-236622.jpeg?_gl=1*18ah45u*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTMwNDEkajU2JGwwJGgw",
       "ownerId": "user-2222-bbbb-0002",
       "enemies": ["7e45bc1f-1c92-4b27-92fe-93350e6230d5"],
       "_createdOn": 1712345732000
@@ -1375,7 +1375,7 @@
       "breed": "Golden Retriever",
       "age": 5,
       "gender": "male",
-      "imageUrl": "https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=1200&q=80",
+      "imageUrl": "https://images.pexels.com/photos/2759564/pexels-photo-2759564.jpeg?_gl=1*1mo89m6*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTM0NDYkajU5JGwwJGgw",
       "ownerId": "user-1111-aaaa-0001",
       "enemies": [],
       "_createdOn": 1712345839000
@@ -1386,7 +1386,7 @@
       "breed": "Beagle",
       "age": 3,
       "gender": "male",
-      "imageUrl": "https://images.unsplash.com/photo-1517350696047-9c9a6f6b8c2d?w=1200&q=80",
+      "imageUrl": "https://images.pexels.com/photos/38010/pexels-photo-38010.jpeg?_gl=1*1skjpv0*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTM0OTckajgkbDAkaDA.",
       "ownerId": "user-3333-cccc-0003",
       "enemies": [
         "d1a9c1e2-4b8f-47f4-9b15-3c71fe1ed9af",
@@ -1400,7 +1400,7 @@
       "breed": "Border Collie",
       "age": 2,
       "gender": "female",
-      "imageUrl": "https://images.unsplash.com/photo-1558944351-b5c6ca9f8f6c?w=1200&q=80",
+      "imageUrl": "https://images.pexels.com/photos/1626219/pexels-photo-1626219.jpeg?_gl=1*1f0yzzg*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTM1MzkkajU4JGwwJGgw",
       "ownerId": "user-2222-bbbb-0002",
       "enemies": ["a7c3f9d2-1e54-4f2b-91b0-9bcd213af45a"],
       "_createdOn": 1712346021000
@@ -1411,7 +1411,7 @@
       "breed": "French Bulldog",
       "age": 4,
       "gender": "female",
-      "imageUrl": "https://images.unsplash.com/photo-1537151625747-768eb6cf92b8?w=1200&q=80",
+      "imageUrl": "https://images.pexels.com/photos/4587982/pexels-photo-4587982.jpeg?_gl=1*10pa6vi*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTM1NzgkajE5JGwwJGgw",
       "ownerId": "user-1111-aaaa-0001",
       "enemies": [],
       "_createdOn": 1712346117000
@@ -1419,10 +1419,10 @@
     "c3d4e5f6-7a8b-4c9d-8e1f-2b3c4d5e6f7a": {
       "_id": "c3d4e5f6-7a8b-4c9d-8e1f-2b3c4d5e6f7a",
       "name": "Nala",
-      "breed": "Bulldog",
+      "breed": "mixed",
       "age": 7,
       "gender": "female",
-      "imageUrl": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&q=80",
+      "imageUrl": "https://images.pexels.com/photos/13776240/pexels-photo-13776240.jpeg?_gl=1*uaubpu*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTM2NzUkajI1JGwwJGgw",
       "ownerId": "user-3333-cccc-0003",
       "enemies": ["f4e9b3a7-82c9-4a03-a3e2-cc91b432cc01"],
       "_createdOn": 1712346203000
@@ -1433,7 +1433,7 @@
       "breed": "Dachshund",
       "age": 5,
       "gender": "male",
-      "imageUrl": "https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=1200&q=80",
+      "imageUrl": "https://images.pexels.com/photos/7055637/pexels-photo-7055637.jpeg?_gl=1*21hk2e*_ga*MTU2MjIwOTE1NC4xNzY0NDkxNTcw*_ga_8JE65Q40S6*czE3NjQ0OTE1NjkkbzEkZzEkdDE3NjQ0OTM3NzEkajU1JGwwJGgw",
       "ownerId": "user-2222-bbbb-0002",
       "enemies": ["b2f6c8d1-e7a3-4f5b-9c1d-0a1b2c3d4e5f"],
       "_createdOn": 1712346299000
