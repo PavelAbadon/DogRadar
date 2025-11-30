@@ -1,4 +1,24 @@
+import { useEffect, useState } from "react"
+import DogCard from "../galery/dogCard/DogCard";
+
 export default function Home() {
+    const[selectedDogs, setSelectedDogs] = useState([]);
+
+
+    useEffect(() =>{
+        (async ()=>{
+            const response = await fetch('http://localhost:3030/data/dogs');
+            const result = await response.json();
+            const arr = Object.values(result || []);
+            //Сортиране по име, Защото не открих начин да ги сортирам по красота :)
+            arr.sort((a, b) =>
+                (a.name || "").localeCompare(b.name || "", "bg", { sensitivity: "base" })
+            );
+            const top3 = arr.slice(0, 3);
+            setSelectedDogs(top3);
+            
+        })();
+    },[]);
     return (
         <main className="container">
             <section className="hero">
@@ -24,22 +44,8 @@ export default function Home() {
                 <div style={{ width: 320 }}>
                     {/* Hero cards (scrollable, simple) */}
                     <div style={{ display: "flex", gap: 8, overflowX: "auto" }}>
-                        <div className="card pixel-card" style={{ minWidth: 220 }}>
-                            <div className="avatar">🐶</div>
-                            <div className="title">Рой</div>
-                            <div className="meta">Labrador · medium</div>
-                            <a className="pixel-btn" href="details.html">
-                                Детайли
-                            </a>
-                        </div>
-                        <div className="card pixel-card" style={{ minWidth: 220 }}>
-                            <div className="avatar">🐕</div>
-                            <div className="title">Лулу</div>
-                            <div className="meta">Yorkie · small</div>
-                            <a className="pixel-btn" href="details.html">
-                                Детайли
-                            </a>
-                        </div>
+                        {selectedDogs.map(selectedDogs => <DogCard key={selectedDogs._id} {...selectedDogs}/>)}
+                       
                     </div>
                 </div>
             </section>

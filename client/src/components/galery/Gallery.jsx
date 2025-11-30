@@ -16,10 +16,9 @@ export default function Gallery() {
         <main className="container">
             <h2 style={{ marginTop: 16 }}>Кучета</h2>
             <div className="gallery-grid">
-                {/* repeat card for each dog (placeholder) */}
-                {dogs.map(dog => <DogCard key={dog._id} {...dog}/>)}
                 
-                {/* add more cards */}
+                {dogs.map(dog => <DogCard key={dog._id} {...dog}/>)}
+                                
             </div>
         </main>
 

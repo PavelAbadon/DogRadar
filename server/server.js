@@ -1349,7 +1349,7 @@
   dogs: {
     "d1a9c1e2-4b8f-47f4-9b15-3c71fe1ed9af": {
       "_id": "d1a9c1e2-4b8f-47f4-9b15-3c71fe1ed9af",
-      "name": "Roy",
+      "name": "Рой",
       "breed": "Labrador Retriever",
       "age": 6,
       "gender": "male",
@@ -1360,7 +1360,7 @@
     },
     "a7c3f9d2-1e54-4f2b-91b0-9bcd213af45a": {
       "_id": "a7c3f9d2-1e54-4f2b-91b0-9bcd213af45a",
-      "name": "Bella",
+      "name": "Бела",
       "breed": "German Shepherd",
       "age": 4,
       "gender": "female",
@@ -1371,7 +1371,7 @@
     },
     "f4e9b3a7-82c9-4a03-a3e2-cc91b432cc01": {
       "_id": "f4e9b3a7-82c9-4a03-a3e2-cc91b432cc01",
-      "name": "Max",
+      "name": "Мaкс",
       "breed": "Golden Retriever",
       "age": 5,
       "gender": "male",
@@ -1407,7 +1407,7 @@
     },
     "b2f6c8d1-e7a3-4f5b-9c1d-0a1b2c3d4e5f": {
       "_id": "b2f6c8d1-e7a3-4f5b-9c1d-0a1b2c3d4e5f",
-      "name": "Maya",
+      "name": "Аря",
       "breed": "French Bulldog",
       "age": 4,
       "gender": "female",
@@ -1418,7 +1418,7 @@
     },
     "c3d4e5f6-7a8b-4c9d-8e1f-2b3c4d5e6f7a": {
       "_id": "c3d4e5f6-7a8b-4c9d-8e1f-2b3c4d5e6f7a",
-      "name": "Nala",
+      "name": "Нала",
       "breed": "mixed",
       "age": 7,
       "gender": "female",
