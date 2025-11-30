@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react"
 import DogCard from "../galery/dogCard/DogCard";
 
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 export default function Home() {
     const[selectedDogs, setSelectedDogs] = useState([]);
 
@@ -10,11 +18,10 @@ export default function Home() {
             const response = await fetch('http://localhost:3030/data/dogs');
             const result = await response.json();
             const arr = Object.values(result || []);
-            //Сортиране по име, Защото не открих начин да ги сортирам по красота :)
-            arr.sort((a, b) =>
-                (a.name || "").localeCompare(b.name || "", "bg", { sensitivity: "base" })
-            );
+            //Джуркаме ги произволно, Защото не открих начин да ги сортирам по красота :)
+            shuffleArray(arr);
             const top3 = arr.slice(0, 3);
+
             setSelectedDogs(top3);
             
         })();
