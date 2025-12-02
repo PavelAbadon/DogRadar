@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import DogCard from "../galery/dogCard/DogCard";
+import { Link } from "react-router";
 
 function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -36,16 +37,12 @@ export default function Home() {
                         предупреждения, когато "врагове" са планирани на същото място.
                     </p>
                     <div style={{ marginTop: 12 }}>
-                        <a className="pixel-btn" href="create-dog.html">
+                        <Link className="pixel-btn" to="create-dog.html">
                             Добави куче
-                        </a>
-                        <a
-                            className="pixel-btn"
-                            href="gallery.html"
-                            style={{ marginLeft: 8 }}
-                        >
+                        </Link>
+                        <Link className="pixel-btn" to='/dogs' style={{ marginLeft: 8 }} >
                             Виж галерия
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div style={{ width: 320 }}>
