@@ -10,6 +10,7 @@ import Register from './components/register/Register';
 import Logout from './components/logout/Logout';
 import Details from './components/details/details';
 import DeleteDog from './components/deleteDog/DeleteDog';
+import CreateDog from './components/createDog/CreateDog';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
                 <Route path='/logout' element={<Logout/>}/>
                 <Route path='/dogs/:dogId/details' element={<Details/>}/>
                 <Route path='/dogs/:dogId/delete' element={<DeleteDog/>}/>
+                <Route path='dogs/create' element={<CreateDog/>}/>
             </Routes>
             
             <Footer/>

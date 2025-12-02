@@ -37,7 +37,7 @@ export default function Home() {
                         предупреждения, когато "врагове" са планирани на същото място.
                     </p>
                     <div style={{ marginTop: 12 }}>
-                        <Link className="pixel-btn" to="create-dog.html">
+                        <Link className="pixel-btn" to="dogs/create">
                             Добави куче
                         </Link>
                         <Link className="pixel-btn" to='/dogs' style={{ marginLeft: 8 }} >
