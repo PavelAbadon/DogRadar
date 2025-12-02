@@ -34,7 +34,7 @@ export default function Details() {
 
                     <div className="flex">
                         <Link className="pixel-btn" to="edit-dog.html">Edit</Link>
-                        <Link className="pixel-btn" to="delete-dog.html">Delete</Link>
+                        <Link className="pixel-btn" to={`/dogs/${dogId}/delete`}>Delete</Link>
                     </div>
                 </div>
 
