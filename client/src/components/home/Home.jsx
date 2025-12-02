@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import DogCard from "../galery/dogCard/DogCard";
 import { Link } from "react-router";
+import request from "../../utils/request";
 
 function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
@@ -11,22 +12,23 @@ function shuffleArray(arr) {
 }
 
 export default function Home() {
-    const[selectedDogs, setSelectedDogs] = useState([]);
+     const [selectedDogs, setSelectedDogs] = useState([]);
 
+    useEffect(() => {
+        request('http://localhost:3030/data/dogs')
+            .then(result => {
+                const arr = Object.values(result || []);
 
-    useEffect(() =>{
-        (async ()=>{
-            const response = await fetch('http://localhost:3030/data/dogs');
-            const result = await response.json();
-            const arr = Object.values(result || []);
-            //Джуркаме ги произволно, Защото не открих начин да ги сортирам по красота :)
-            shuffleArray(arr);
-            const top3 = arr.slice(0, 3);
+                shuffleArray(arr);
 
-            setSelectedDogs(top3);
-            
-        })();
-    },[]);
+                const top3 = arr.slice(0, 3);
+
+                setSelectedDogs(top3);
+            })
+            .catch(err => {
+                alert(err.message);
+            });
+    }, []);
     return (
         <main className="container">
             <section className="hero">

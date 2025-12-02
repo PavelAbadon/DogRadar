@@ -1,3 +1,5 @@
+import request from "../../utils/request";
+
 export default function CreateDog() {
     const createNewDogHandler = async(event) =>{
         event.preventDefault();
@@ -6,15 +8,7 @@ export default function CreateDog() {
         dogData.age = Number(dogData.age);
         //console.log(dogData);
 
-        const response = await fetch('http://localhost:3030/data/dogs',{
-            method: 'POST',
-            headers: {
-                'content-type':'aplication/json'
-            },
-            body: JSON.stringify(dogData),
-        });
-
-        const result = await response.json();
+        const result = await request('http://localhost:3030/data/dogs', 'POST', dogData)
 
         //todo пак голямо тоду, не работи ауторизацията ще трябва да го оправим
             
