@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router';
+import { useState } from 'react';
 
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
@@ -14,7 +15,14 @@ import CreateDog from './components/createDog/CreateDog';
 
 
 function App() {
-    
+    const [user, setUser] = useState(null);
+
+    const registerHandler = (email) =>{
+        setUser({
+            email
+        })
+    }
+
     return (
         <>
             <Header/>
@@ -24,7 +32,7 @@ function App() {
                 <Route path='/dogs' element={<Gallery/>}/>
                 <Route path='/calendar' element={<Calendar/>}/>
                 <Route path='/login' element={<Login/>}/>
-                <Route path='/register' element={<Register/>}/>
+                <Route path='/register' element={<Register user={user} onRegister={registerHandler}/>}/>
                 <Route path='/logout' element={<Logout/>}/>
                 <Route path='/dogs/:dogId/details' element={<Details/>}/>
                 <Route path='/dogs/:dogId/delete' element={<DeleteDog/>}/>
