@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router";
 
 export default function Register({
-    user, onRegister
+    onRegister
 }) {
     
+    const navigate = useNavigate();
 
     const registerSubmit = (formData) =>{
+        
         const email = formData.get('email');
         const password = formData.get('password');
         const confirmPassword = formData.get('confirm-password');
@@ -13,14 +16,13 @@ export default function Register({
         
         onRegister({email,});
 
+        navigate('/');
 
     }
 
     return (
         <main className="container">
             <h2 style={{ marginTop: 16 }}>Register</h2>
-            {user && <h2>вече има юзър 
-                wellcome{user.email}</h2>}
             <div className="form" style={{ maxWidth: 520, marginTop: 12 }}>
                 <form action={registerSubmit} method="post">
                     <label htmlFor="email">Email</label>
@@ -35,7 +37,7 @@ export default function Register({
                         </button>
                     </div>
                     <div className="actions">
-                        <button className="pixel-btn" onClick={() => navigate('/login')} >
+                        <button className="pixel-btn"  >
                              Вече имаш акаунт тук бутона трябва да се оправи
                         </button>
                     </div>
