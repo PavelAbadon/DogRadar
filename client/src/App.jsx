@@ -22,10 +22,11 @@ function App() {
         if(registriraniPotrebiteli.some(user => user.email === email)){
             throw new Error('Има вече такъв потребител')
         }
-        setRegistriraniPotrebiteli(state => [...state, {email, password}]);
+        const newUser = {email, password}
+        setRegistriraniPotrebiteli(state => [...state, newUser ]);
         
-        // todo login user after register
-
+        
+        setUser(newUser);
     }
 
     const loginHandler = (email, password) => {
