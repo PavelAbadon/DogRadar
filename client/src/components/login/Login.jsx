@@ -1,7 +1,7 @@
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 export default function Login({
-    onlogin,
+    onLogin,
 }) {
     const navigate = useNavigate();
     const submitHandler = (e)=>{
@@ -18,7 +18,7 @@ export default function Login({
         }
 
         try {
-            onlogin(email, password);
+            onLogin(email, password);
         navigate('/');
             
         } catch (err) {
@@ -39,13 +39,13 @@ export default function Login({
                         <button className="pixel-btn" type="submit">
                             Login
                         </button>
-                        <a
+                        <Link
                             className="pixel-btn"
-                            href="register.html"
+                            to="/register"
                             style={{ background: "#f6f6f2" }}
                         >
                             Register
-                        </a>
+                        </Link>
                     </div>
                 </form>
             </div>

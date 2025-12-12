@@ -39,6 +39,10 @@ function App() {
         setUser(user)
     }
 
+    const logoutHandler = () => {
+        setUser(null);
+    }
+
     return (
         <>
             <Header user={user}/>
@@ -49,7 +53,7 @@ function App() {
                 <Route path='/calendar' element={<Calendar/>}/>
                 <Route path='/login' element={<Login onLogin={loginHandler}/>}/>
                 <Route path='/register' element={<Register onRegister={registerHandler}/>}/>
-                <Route path='/logout' element={<Logout/>}/>
+                <Route path='/logout' element={<Logout onLogout={logoutHandler}/>}/>
                 <Route path='/dogs/:dogId/details' element={<Details/>}/>
                 <Route path='/dogs/:dogId/delete' element={<DeleteDog/>}/>
                 <Route path='dogs/create' element={<CreateDog/>}/>
