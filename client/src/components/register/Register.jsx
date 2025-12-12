@@ -12,11 +12,18 @@ export default function Register({
         const password = formData.get('password');
         const confirmPassword = formData.get('confirm-password');
 
-        //todo трябва валидация 
-        
-        onRegister({email,});
+       if(!email || !password){
+            return alert('имела и паролата са задължителни');
 
+        }
+
+        try {
+            onRegister(email, password);
         navigate('/');
+            
+        } catch (err) {
+            alert(err.message);
+        }
 
     }
 
@@ -24,7 +31,7 @@ export default function Register({
         <main className="container">
             <h2 style={{ marginTop: 16 }}>Register</h2>
             <div className="form" style={{ maxWidth: 520, marginTop: 12 }}>
-                <form action={registerSubmit} method="post">
+                <form action={registerSubmit} id='register'>
                     <label htmlFor="email">Email</label>
                     <input id="email" name="email" type="email" required="" />
                     <label htmlFor="password">Password</label>

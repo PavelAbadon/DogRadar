@@ -1,9 +1,36 @@
-export default function Login() {
+import { useNavigate } from "react-router";
+
+export default function Login({
+    onlogin,
+}) {
+    const navigate = useNavigate();
+    const submitHandler = (e)=>{
+        e.preventDefault();
+
+        const formData = new FormData(e.target);
+
+        const email = formData.get('email');
+        const password = formData.get('password');
+
+        if(!email || !password){
+            return alert('имела и паролата са задължителни');
+
+        }
+
+        try {
+            onlogin(email, password);
+        navigate('/');
+            
+        } catch (err) {
+            alert(err.message);
+        }
+        
+    }
     return (
         <main className="container">
             <h2 style={{ marginTop: 16 }}>Login</h2>
             <div className="form" style={{ maxWidth: 420, marginTop: 12 }}>
-                <form action="#" method="post">
+                <form onSubmit={submitHandler} id='login'>
                     <label htmlFor="email">Email</label>
                     <input id="email" name="email" type="email" required="" />
                     <label htmlFor="password">Password</label>

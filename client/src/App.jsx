@@ -15,24 +15,39 @@ import CreateDog from './components/createDog/CreateDog';
 
 
 function App() {
+    const [registriraniPotrebiteli, setRegistriraniPotrebiteli] = useState([]);
     const [user, setUser] = useState(null);
 
-    const authHandler = (email) =>{
-        setUser({
-            email
-        })
+    const registerHandler = (email, password) =>{
+        if(registriraniPotrebiteli.some(user => user.email === email)){
+            throw new Error('Има вече такъв потребител')
+        }
+        setRegistriraniPotrebiteli(state => [...state, {email, password}]);
+        
+        // todo login user after register
+
+    }
+
+    const loginHandler = (email, password) => {
+        const user = registriraniPotrebiteli.find(u => u.email === email && u.password === password);
+
+        if(!user){
+            throw new Error('Няма такъв потребител');
+        }
+        
+        setUser(user)
     }
 
     return (
         <>
-            <Header/>
+            <Header user={user}/>
 
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/dogs' element={<Gallery/>}/>
                 <Route path='/calendar' element={<Calendar/>}/>
-                <Route path='/login' element={<Login onLogin={authHandler}/>}/>
-                <Route path='/register' element={<Register onRegister={authHandler}/>}/>
+                <Route path='/login' element={<Login onLogin={loginHandler}/>}/>
+                <Route path='/register' element={<Register onRegister={registerHandler}/>}/>
                 <Route path='/logout' element={<Logout/>}/>
                 <Route path='/dogs/:dogId/details' element={<Details/>}/>
                 <Route path='/dogs/:dogId/delete' element={<DeleteDog/>}/>
