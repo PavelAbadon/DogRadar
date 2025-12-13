@@ -12,6 +12,7 @@ import Logout from './components/logout/Logout';
 import Details from './components/details/details';
 import DeleteDog from './components/deleteDog/DeleteDog';
 import CreateDog from './components/createDog/CreateDog';
+import EditDog from './components/editDog/EditDog';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
                 <Route path='/logout' element={<Logout onLogout={logoutHandler}/>}/>
                 <Route path='/dogs/:dogId/details' element={<Details/>}/>
                 <Route path='/dogs/:dogId/delete' element={<DeleteDog/>}/>
+                <Route path='/dogs/:dogId/edit' element={<EditDog/>}/>
                 <Route path='dogs/create' element={<CreateDog/>}/>
             </Routes>
             

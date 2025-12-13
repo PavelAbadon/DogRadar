@@ -33,7 +33,7 @@ export default function Details() {
                     </div>
 
                     <div className="flex">
-                        <Link className="pixel-btn" to="edit-dog.html">Edit</Link>
+                        <Link className="pixel-btn" to={`/dogs/${dogId}/edit`}>Edit</Link>
                         <Link className="pixel-btn" to={`/dogs/${dogId}/delete`}>Delete</Link>
                     </div>
                 </div>
